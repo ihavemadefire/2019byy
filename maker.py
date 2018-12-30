@@ -7,17 +7,20 @@ def index():
     return render_template('index.html')
 
 @app.route('/home')
-def index():
+def home():
     return render_template('home.html')
 
 @app.route('/blog')
-def index():
+def blog():
     return render_template('blog.html')
 
 @app.route('/goals')
-def index():
+def goals():
     return render_template('goals.html')
 
 @app.route('/about')
-    def index():
-        return render_template('about.html')
+def about():
+    return render_template('about.html')
+
+if __name__ == '__main__':
+    app.run(debug=False)
